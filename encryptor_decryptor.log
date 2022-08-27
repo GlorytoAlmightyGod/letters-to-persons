@@ -1,55 +1,55 @@
--------------LETTER 30-------------
-1 on THIS_LETTER is 21 in Reality.
-2 on THIS_LETTER is 22 in Reality.
-3 on THIS_LETTER is 23 in Reality.
-4 on THIS_LETTER is 24 in Reality.
-5 on THIS_LETTER is 25 in Reality.
-6 on THIS_LETTER is 26 in Reality.
-7 on THIS_LETTER is 1 in Reality.
-8 on THIS_LETTER is 2 in Reality.
-9 on THIS_LETTER is 3 in Reality.
-10 on THIS_LETTER is 4 in Reality.
-11 on THIS_LETTER is 5 in Reality.
-12 on THIS_LETTER is 6 in Reality.
-13 on THIS_LETTER is 7 in Reality.
-14 on THIS_LETTER is 8 in Reality.
-15 on THIS_LETTER is 9 in Reality.
-16 on THIS_LETTER is 10 in Reality.
-17 on THIS_LETTER is 11 in Reality.
-18 on THIS_LETTER is 12 in Reality.
-19 on THIS_LETTER is 13 in Reality.
-20 on THIS_LETTER is 14 in Reality.
-21 on THIS_LETTER is 15 in Reality.
-22 on THIS_LETTER is 16 in Reality.
-23 on THIS_LETTER is 17 in Reality.
-24 on THIS_LETTER is 18 in Reality.
-25 on THIS_LETTER is 19 in Reality.
-26 on THIS_LETTER is 20 in Reality.
+-------------LETTER 9-------------
+A on ENCRYPTED_LETTER is M in Reality.
+B on ENCRYPTED_LETTER is N in Reality.
+C on ENCRYPTED_LETTER is O in Reality.
+D on ENCRYPTED_LETTER is P in Reality.
+E on ENCRYPTED_LETTER is Q in Reality.
+F on ENCRYPTED_LETTER is R in Reality.
+G on ENCRYPTED_LETTER is S in Reality.
+H on ENCRYPTED_LETTER is T in Reality.
+I on ENCRYPTED_LETTER is U in Reality.
+J on ENCRYPTED_LETTER is V in Reality.
+K on ENCRYPTED_LETTER is W in Reality.
+L on ENCRYPTED_LETTER is X in Reality.
+M on ENCRYPTED_LETTER is Y in Reality.
+N on ENCRYPTED_LETTER is Z in Reality.
+O on ENCRYPTED_LETTER is A in Reality.
+P on ENCRYPTED_LETTER is B in Reality.
+Q on ENCRYPTED_LETTER is C in Reality.
+R on ENCRYPTED_LETTER is D in Reality.
+S on ENCRYPTED_LETTER is E in Reality.
+T on ENCRYPTED_LETTER is F in Reality.
+U on ENCRYPTED_LETTER is G in Reality.
+V on ENCRYPTED_LETTER is H in Reality.
+W on ENCRYPTED_LETTER is I in Reality.
+X on ENCRYPTED_LETTER is J in Reality.
+Y on ENCRYPTED_LETTER is K in Reality.
+Z on ENCRYPTED_LETTER is L in Reality.
 
-1 in Reality is 7 on THIS_LETTER.
-2 in Reality is 8 on THIS_LETTER.
-3 in Reality is 9 on THIS_LETTER.
-4 in Reality is 10 on THIS_LETTER.
-5 in Reality is 11 on THIS_LETTER.
-6 in Reality is 12 on THIS_LETTER.
-7 in Reality is 13 on THIS_LETTER.
-8 in Reality is 14 on THIS_LETTER.
-9 in Reality is 15 on THIS_LETTER.
-10 in Reality is 16 on THIS_LETTER.
-11 in Reality is 17 on THIS_LETTER.
-12 in Reality is 18 on THIS_LETTER.
-13 in Reality is 19 on THIS_LETTER.
-14 in Reality is 20 on THIS_LETTER.
-15 in Reality is 21 on THIS_LETTER.
-16 in Reality is 22 on THIS_LETTER.
-17 in Reality is 23 on THIS_LETTER.
-18 in Reality is 24 on THIS_LETTER.
-19 in Reality is 25 on THIS_LETTER.
-20 in Reality is 26 on THIS_LETTER.
-21 in Reality is 1 on THIS_LETTER.
-22 in Reality is 2 on THIS_LETTER.
-23 in Reality is 3 on THIS_LETTER.
-24 in Reality is 4 on THIS_LETTER.
-25 in Reality is 5 on THIS_LETTER.
-26 in Reality is 6 on THIS_LETTER.
+A in Reality is to be O on ENCRYPTED_LETTER.
+B in Reality is to be P on ENCRYPTED_LETTER.
+C in Reality is to be Q on ENCRYPTED_LETTER.
+D in Reality is to be R on ENCRYPTED_LETTER.
+E in Reality is to be S on ENCRYPTED_LETTER.
+F in Reality is to be T on ENCRYPTED_LETTER.
+G in Reality is to be U on ENCRYPTED_LETTER.
+H in Reality is to be V on ENCRYPTED_LETTER.
+I in Reality is to be W on ENCRYPTED_LETTER.
+J in Reality is to be X on ENCRYPTED_LETTER.
+K in Reality is to be Y on ENCRYPTED_LETTER.
+L in Reality is to be Z on ENCRYPTED_LETTER.
+M in Reality is to be A on ENCRYPTED_LETTER.
+N in Reality is to be B on ENCRYPTED_LETTER.
+O in Reality is to be C on ENCRYPTED_LETTER.
+P in Reality is to be D on ENCRYPTED_LETTER.
+Q in Reality is to be E on ENCRYPTED_LETTER.
+R in Reality is to be F on ENCRYPTED_LETTER.
+S in Reality is to be G on ENCRYPTED_LETTER.
+T in Reality is to be H on ENCRYPTED_LETTER.
+U in Reality is to be I on ENCRYPTED_LETTER.
+V in Reality is to be J on ENCRYPTED_LETTER.
+W in Reality is to be K on ENCRYPTED_LETTER.
+X in Reality is to be L on ENCRYPTED_LETTER.
+Y in Reality is to be M on ENCRYPTED_LETTER.
+Z in Reality is to be N on ENCRYPTED_LETTER.
 

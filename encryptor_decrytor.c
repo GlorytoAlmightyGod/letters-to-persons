@@ -1,6 +1,15 @@
 #include <stdio.h>
-
-
+typedef enum { false, true } boolean;
+char convert_to_alphabet(int my_number, boolean upper_case){
+    char my_alphabet; 
+    if(upper_case){
+        my_alphabet =  my_number + 64;
+    }
+    else{
+        my_alphabet =  my_number + 96;
+    }
+    return my_alphabet;
+}
 
 int decrypt(int rank_of_an_aphabet, int number_on_letter){
     return ((rank_of_an_aphabet - 1 + number_on_letter*number_on_letter)%26 + number_on_letter)%26 + 1;
@@ -25,18 +34,18 @@ void display_decryption_encryption_of_the_letter(int current_letter_number){
     printf("-------------LETTER %d-------------", current_letter_number);
     printf("\n");
     for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
-        printf("%d on THIS_LETTER is %d in Reality.", alphabet_index, decrypt(alphabet_index, current_letter_number));
+        printf("%c on ENCRYPTED_LETTER is %c in Reality.", convert_to_alphabet(alphabet_index, true), convert_to_alphabet(decrypt(alphabet_index, current_letter_number), true));
         printf("\n");
     }
     printf("\n");
     for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
-        printf("%d in Reality is %d on THIS_LETTER.", alphabet_index, encrypt(alphabet_index, current_letter_number));
+        printf("%c in Reality is to be %c on ENCRYPTED_LETTER.", convert_to_alphabet(alphabet_index, true), convert_to_alphabet(encrypt(alphabet_index, current_letter_number), true));
         printf("\n");
     }
     printf("\n");
 }
 
 int main(void){
-    display_decryption_encryption_of_the_letter(30);
+    display_decryption_encryption_of_the_letter(9);
     return 0;
 }
