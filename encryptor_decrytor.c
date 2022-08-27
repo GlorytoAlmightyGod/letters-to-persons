@@ -12,7 +12,7 @@ char convert_to_alphabet(int my_number, boolean upper_case){
 }
 
 int decrypt(int rank_of_an_aphabet, int number_on_letter){
-    return ((rank_of_an_aphabet - 1 + number_on_letter*number_on_letter)%26 + number_on_letter)%26 + 1;
+    return ((rank_of_an_aphabet - 1 + number_on_letter)%26 + number_on_letter)%26 + 1;
 }
 int encrypt(int rank_of_an_aphabet, int number_on_letter){
     int alphabet_index;
@@ -26,9 +26,6 @@ int encrypt(int rank_of_an_aphabet, int number_on_letter){
     return -1;
 }
 
-void display_decryption_of_the_letter(int current_letter_number){
-
-}
 void display_decryption_encryption_of_the_letter(int current_letter_number){
     int alphabet_index;
     printf("-------------LETTER %d-------------", current_letter_number);
@@ -46,6 +43,6 @@ void display_decryption_encryption_of_the_letter(int current_letter_number){
 }
 
 int main(void){
-    display_decryption_encryption_of_the_letter(9);
+    display_decryption_encryption_of_the_letter(2);
     return 0;
 }
