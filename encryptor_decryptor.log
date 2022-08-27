@@ -1,55 +1,55 @@
--------------LETTER 2-------------
-A on ENCRYPTED_LETTER is E in Reality.
-B on ENCRYPTED_LETTER is F in Reality.
-C on ENCRYPTED_LETTER is G in Reality.
-D on ENCRYPTED_LETTER is H in Reality.
-E on ENCRYPTED_LETTER is I in Reality.
-F on ENCRYPTED_LETTER is J in Reality.
-G on ENCRYPTED_LETTER is K in Reality.
-H on ENCRYPTED_LETTER is L in Reality.
-I on ENCRYPTED_LETTER is M in Reality.
-J on ENCRYPTED_LETTER is N in Reality.
-K on ENCRYPTED_LETTER is O in Reality.
-L on ENCRYPTED_LETTER is P in Reality.
-M on ENCRYPTED_LETTER is Q in Reality.
-N on ENCRYPTED_LETTER is R in Reality.
-O on ENCRYPTED_LETTER is S in Reality.
-P on ENCRYPTED_LETTER is T in Reality.
-Q on ENCRYPTED_LETTER is U in Reality.
-R on ENCRYPTED_LETTER is V in Reality.
-S on ENCRYPTED_LETTER is W in Reality.
-T on ENCRYPTED_LETTER is X in Reality.
-U on ENCRYPTED_LETTER is Y in Reality.
-V on ENCRYPTED_LETTER is Z in Reality.
-W on ENCRYPTED_LETTER is A in Reality.
-X on ENCRYPTED_LETTER is B in Reality.
-Y on ENCRYPTED_LETTER is C in Reality.
-Z on ENCRYPTED_LETTER is D in Reality.
+-------------LETTER 1123-------------
+A in encrypted_letter is K in raw_letter.
+B in encrypted_letter is L in raw_letter.
+C in encrypted_letter is M in raw_letter.
+D in encrypted_letter is N in raw_letter.
+E in encrypted_letter is O in raw_letter.
+F in encrypted_letter is P in raw_letter.
+G in encrypted_letter is Q in raw_letter.
+H in encrypted_letter is R in raw_letter.
+I in encrypted_letter is S in raw_letter.
+J in encrypted_letter is T in raw_letter.
+K in encrypted_letter is U in raw_letter.
+L in encrypted_letter is V in raw_letter.
+M in encrypted_letter is W in raw_letter.
+N in encrypted_letter is X in raw_letter.
+O in encrypted_letter is Y in raw_letter.
+P in encrypted_letter is Z in raw_letter.
+Q in encrypted_letter is A in raw_letter.
+R in encrypted_letter is B in raw_letter.
+S in encrypted_letter is C in raw_letter.
+T in encrypted_letter is D in raw_letter.
+U in encrypted_letter is E in raw_letter.
+V in encrypted_letter is F in raw_letter.
+W in encrypted_letter is G in raw_letter.
+X in encrypted_letter is H in raw_letter.
+Y in encrypted_letter is I in raw_letter.
+Z in encrypted_letter is J in raw_letter.
 
-A in Reality is to be W on ENCRYPTED_LETTER.
-B in Reality is to be X on ENCRYPTED_LETTER.
-C in Reality is to be Y on ENCRYPTED_LETTER.
-D in Reality is to be Z on ENCRYPTED_LETTER.
-E in Reality is to be A on ENCRYPTED_LETTER.
-F in Reality is to be B on ENCRYPTED_LETTER.
-G in Reality is to be C on ENCRYPTED_LETTER.
-H in Reality is to be D on ENCRYPTED_LETTER.
-I in Reality is to be E on ENCRYPTED_LETTER.
-J in Reality is to be F on ENCRYPTED_LETTER.
-K in Reality is to be G on ENCRYPTED_LETTER.
-L in Reality is to be H on ENCRYPTED_LETTER.
-M in Reality is to be I on ENCRYPTED_LETTER.
-N in Reality is to be J on ENCRYPTED_LETTER.
-O in Reality is to be K on ENCRYPTED_LETTER.
-P in Reality is to be L on ENCRYPTED_LETTER.
-Q in Reality is to be M on ENCRYPTED_LETTER.
-R in Reality is to be N on ENCRYPTED_LETTER.
-S in Reality is to be O on ENCRYPTED_LETTER.
-T in Reality is to be P on ENCRYPTED_LETTER.
-U in Reality is to be Q on ENCRYPTED_LETTER.
-V in Reality is to be R on ENCRYPTED_LETTER.
-W in Reality is to be S on ENCRYPTED_LETTER.
-X in Reality is to be T on ENCRYPTED_LETTER.
-Y in Reality is to be U on ENCRYPTED_LETTER.
-Z in Reality is to be V on ENCRYPTED_LETTER.
+A in raw_letter is to be Q on encrypted_letter.
+B in raw_letter is to be R on encrypted_letter.
+C in raw_letter is to be S on encrypted_letter.
+D in raw_letter is to be T on encrypted_letter.
+E in raw_letter is to be U on encrypted_letter.
+F in raw_letter is to be V on encrypted_letter.
+G in raw_letter is to be W on encrypted_letter.
+H in raw_letter is to be X on encrypted_letter.
+I in raw_letter is to be Y on encrypted_letter.
+J in raw_letter is to be Z on encrypted_letter.
+K in raw_letter is to be A on encrypted_letter.
+L in raw_letter is to be B on encrypted_letter.
+M in raw_letter is to be C on encrypted_letter.
+N in raw_letter is to be D on encrypted_letter.
+O in raw_letter is to be E on encrypted_letter.
+P in raw_letter is to be F on encrypted_letter.
+Q in raw_letter is to be G on encrypted_letter.
+R in raw_letter is to be H on encrypted_letter.
+S in raw_letter is to be I on encrypted_letter.
+T in raw_letter is to be J on encrypted_letter.
+U in raw_letter is to be K on encrypted_letter.
+V in raw_letter is to be L on encrypted_letter.
+W in raw_letter is to be M on encrypted_letter.
+X in raw_letter is to be N on encrypted_letter.
+Y in raw_letter is to be O on encrypted_letter.
+Z in raw_letter is to be P on encrypted_letter.
 
