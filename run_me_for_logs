@@ -1,5 +1,5 @@
 rm -rf encryptor_decryptor.log
-gcc encryptor_decrytor.c
+gcc encryptor_decryptor.c
 ./a.out > encryptor_decryptor.log
 rm -rf a.out
 echo "Hi, good luck saving PERSONS!"

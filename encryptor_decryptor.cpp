@@ -111,8 +111,9 @@ void verify_decrypted_letter_with_raw_letter(int number_on_letter){
 
 
 int main(void){
-    int number_on_letter = 51;
-    display_decryption_encryption_of_the_letter(number_on_letter);
+    int number_on_letter = 751;
+
+    /*display_decryption_encryption_of_the_letter(number_on_letter);*/
 
     read_raw_letter(number_on_letter);
     encrypt_the_letter(number_on_letter);
