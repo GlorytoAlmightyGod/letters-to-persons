@@ -1,0 +1,2 @@
+this letter(decrypted_letter) will be generated using the encryptor_decryptor.c file taking encrypted_letter as the input.
+decrypted_letter is to be the exact replica of the raw_letter.
