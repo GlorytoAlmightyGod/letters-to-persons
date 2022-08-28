@@ -29,7 +29,7 @@ NOTE : Running & ACCESSING the ENCRYPTED_LETTER are the only required sections t
 C. **Running**
 STEP 1 : Create the RAW-LETTER.
 **_(Type or) Paste and then Save the message you want to encrypt for the persons in the file RAW-LETTER._**
-**PLEASE MAKE SURE THAT THERE ARE BLANK LINES at the end of the _THIS FILE_.**
+**PLEASE MAKE SURE THAT THERE ARE AT LEAST _10_ BLANK LINES at the end of the _THIS FILE_.**
 _THIS_ STEP requires manual intervention as it is specific to each person-what they would choose to encrypt.
 
 STEP 2 : Execute the run_me_please with the following command.
