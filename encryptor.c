@@ -3,7 +3,7 @@
 int main(void){
 
     char* name_of_raw_letter;
-    name_of_raw_letter = "raw_letter";
+    name_of_raw_letter = "RAW-LETTER";
     char* name_of_encrypted_letter;
     name_of_encrypted_letter = "encrypted_letter";
 

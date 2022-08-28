@@ -1,4 +1,3 @@
-chmod +x clean_up
 ./clean_up
 
 gcc key_display.c

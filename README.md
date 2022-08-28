@@ -6,5 +6,8 @@ decrypted_encrypted_letter is to be the exact replica of the raw_letter.
 
 "GOD is the key!" <- this is what i will write in the code deciphiring section. every letter will have GOD in the end!
 
-
+chmod +x run_me_please
+chmod +x clean_up
+./run_me_please
+THAT's ALL!
 NOTE: ALWAYS keep some empty lines at the bottom of the raw_letter file.
