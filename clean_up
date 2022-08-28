@@ -1,0 +1,4 @@
+rm -rf encrypted_letter
+rm -rf decrypted_letter
+rm -rf *.log
+rm -rf *a.out*
