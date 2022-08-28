@@ -1,6 +1,20 @@
 rm -rf encrypted_letter
-rm -rf encryptor_decryptor.log
-gcc encryptor_decryptor.c
-./a.out > encryptor_decryptor.log
+rm -rf *.log
+rm -rf *a.out*
+
+
+gcc key_display.c
+./a.out > key.log
 rm -rf a.out
+
+gcc encryptor.c
+./a.out > encryptor.log
+rm -rf a.out
+
+gcc decryptor.c
+./a.out > decryptor.log
+rm -rf a.out
+
+
+
 echo "Hi, good luck saving PERSONS!"

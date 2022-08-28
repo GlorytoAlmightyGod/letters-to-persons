@@ -1,8 +1,5 @@
 #include <stdio.h>
 typedef enum { false, true } boolean;
-
-#define MAXIMUM_SIZE 10000
-
 char convert_to_alphabet(int my_number, boolean upper_case){
     char my_alphabet; 
     if(upper_case){
@@ -29,23 +26,7 @@ int encrypt_the_alphabet(int rank_of_an_aphabet, int number_on_letter){
     return -1;
 }
 
-void display_decryption_encryption_of_the_letter(int number_on_letter){
-    int alphabet_index;
-    printf("-------------LETTER %d-------------", number_on_letter);
-    printf("\n");
-    for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
-        printf("%c in encrypted_letter is %c in raw_letter.", convert_to_alphabet(alphabet_index, true), convert_to_alphabet(decrypt_the_alphabet(alphabet_index, number_on_letter), true));
-        printf("\n");
-    }
-    printf("\n");
-    for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
-        printf("%c in raw_letter is to be %c on encrypted_letter.", convert_to_alphabet(alphabet_index, true), convert_to_alphabet(encrypt_the_alphabet(alphabet_index, number_on_letter), true));
-        printf("\n");
-    }
-    printf("\n");
-}
-
-int determine_length_of_raw_letter(char filename[]){
+int determine_length_of_letter(char filename[]){
     FILE *file = fopen(filename, "r");
     int my_alphabet, my_index = -1;
     while ((my_alphabet = fgetc(file)) != EOF){
@@ -94,34 +75,4 @@ void display_text(char text[], int length_of_text){
     }
     printf("\n");
     printf("\n");
-}
-
-int main(void){
-    int number_on_letter = 23;
-//    display_decryption_encryption_of_the_letter(number_on_letter);
-
-    char* name_of_raw_letter;
-    name_of_raw_letter = "raw_letter";
-    char* name_of_encrypted_letter;
-    name_of_encrypted_letter = "encrypted_letter";
-
-    int length_of_letter = determine_length_of_raw_letter(name_of_raw_letter);
-    
-    
-    char raw_letter_text[length_of_letter];
-    char* pointer_raw_letter_text;
-
-    char encrypted_text[length_of_letter];
-    char* pointer_encrypted_text;
-
-    pointer_raw_letter_text = read_letter(name_of_raw_letter, raw_letter_text);
-    pointer_encrypted_text = encrypt_the_letter(raw_letter_text, encrypted_text, length_of_letter, number_on_letter);
-    write_letter(name_of_encrypted_letter, encrypted_text, length_of_letter);
-
-//    display_text(pointer_raw_letter_text, length_of_letter);
-//    display_text(pointer_encrypted_text, length_of_letter);
-
-
-
-    return 0;
 }
