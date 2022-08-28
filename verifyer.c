@@ -21,11 +21,11 @@ int main(void){
     pointer_decrypted_letter_text = read_letter(name_of_decrypted_letter, decrypted_letter_text);
 
     if(is_matching_validly(pointer_raw_letter_text, pointer_decrypted_letter_text, length_of_letter)){
-        printf("YES\nEncryption READY to be Decrypted by persons!\n");
+        printf("SUCCESS\nEncryption READY in encrypted_letter for persons.\ndecrypted_letter matches with RAW-LETTER!\n");
     }
     else{
         /*shouldn't be happening!*/
-        printf("NO\nPlease Fix some incompatabilities between encryptor.c & decryptor.c!\n");
+        printf("FAILURE\nPlease Fix some incompatabilities between encryptor.c & decryptor.c!\n");
     }
     return 0;
 }
