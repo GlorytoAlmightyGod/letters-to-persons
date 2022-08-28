@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ENCRYPTION_NUMBER_ON_LETTER 14
+#define ENCRYPTION_NUMBER_ON_LETTER 1
 
 typedef enum { false, true } boolean;
 
@@ -15,7 +15,7 @@ char convert_to_alphabet(int my_number, boolean upper_case){
 }
 
 int decrypt_the_alphabet(int rank_of_an_aphabet, int number_on_letter){
-    return ((rank_of_an_aphabet - 1 + number_on_letter)%26 + number_on_letter)%26 + 1;
+    return ((rank_of_an_aphabet - 1 + number_on_letter)%26)%26 + 1;
 }
 int encrypt_the_alphabet(int rank_of_an_aphabet, int number_on_letter){
     int alphabet_index;
