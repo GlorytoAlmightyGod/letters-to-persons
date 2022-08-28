@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ENCRYPTION_NUMBER_OF_LETTER 23
+#define ENCRYPTION_NUMBER_ON_LETTER 14
 
 typedef enum { false, true } boolean;
 
@@ -50,8 +50,7 @@ char* read_letter(char filename[], char text[]){
 }
 
 char* encrypt_the_letter(char input_text[], char output_text[], int length_of_input_text, int encryption_number){
-    int my_index;
-    for(my_index = 0; my_index < length_of_input_text; my_index++){
+    for(int my_index = 0; my_index < length_of_input_text; my_index++){
         char my_character = input_text[my_index];
         int my_number = my_character;
         if(my_number >= 65 && my_number <= 90){
@@ -59,6 +58,23 @@ char* encrypt_the_letter(char input_text[], char output_text[], int length_of_in
         }
         else if(my_number >= 97 && my_number <= 122){
             output_text[my_index] = convert_to_alphabet(encrypt_the_alphabet(my_number - 96, encryption_number), false);
+        }
+        else{
+            output_text[my_index] = my_character;
+        }
+    }
+    return output_text;
+}
+
+char* decrypt_the_letter(char input_text[], char output_text[], int length_of_input_text, int encryption_number){
+    for(int my_index = 0; my_index < length_of_input_text; my_index++){
+        char my_character = input_text[my_index];
+        int my_number = my_character;
+        if(my_number >= 65 && my_number <= 90){
+            output_text[my_index] = convert_to_alphabet(decrypt_the_alphabet(my_number - 64, encryption_number), true);
+        }
+        else if(my_number >= 97 && my_number <= 122){
+            output_text[my_index] = convert_to_alphabet(decrypt_the_alphabet(my_number - 96, encryption_number), false);
         }
         else{
             output_text[my_index] = my_character;

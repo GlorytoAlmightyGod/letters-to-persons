@@ -17,7 +17,7 @@ int main(void){
     char* pointer_encrypted_text;
 
     pointer_raw_letter_text = read_letter(name_of_raw_letter, raw_letter_text);
-    pointer_encrypted_text = encrypt_the_letter(raw_letter_text, encrypted_text, length_of_letter, ENCRYPTION_NUMBER_OF_LETTER);
+    pointer_encrypted_text = encrypt_the_letter(raw_letter_text, encrypted_text, length_of_letter, ENCRYPTION_NUMBER_ON_LETTER);
     write_letter(name_of_encrypted_letter, encrypted_text, length_of_letter);
 
     display_text(pointer_raw_letter_text, length_of_letter);
