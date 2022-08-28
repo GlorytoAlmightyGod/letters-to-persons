@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define ENCRYPTION_NUMBER_ON_LETTER 1
 
 typedef enum { false, true } boolean;
 

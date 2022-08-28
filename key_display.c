@@ -16,7 +16,9 @@ void display_CODE_of_the_letter(int number_on_letter){
     printf("\n");
 }
 
-int main(void){
-    display_CODE_of_the_letter(ENCRYPTION_NUMBER_ON_LETTER);
+int main(int argc, char* argv[]){
+    int encryption_number_on_letter;
+    sscanf(argv[1], "%d", &encryption_number_on_letter);
+    display_CODE_of_the_letter(encryption_number_on_letter);
     return 0;
 }

@@ -1,15 +1,16 @@
 ./clean_up
 
-gcc key_display.c -o key_display.out
-./key_display.out > key.log
-
 gcc encryptor.c -o encryptor.out
-./encryptor.out > encryptor.log
+./encryptor.out 1 > encryptor.log
 
 gcc decryptor.c -o decryptor.out
-./decryptor.out > decryptor.log
+./decryptor.out 1 > decryptor.log
+
+gcc key_display.c -o key_display.out
+./key_display.out 1 > key.log
 
 gcc verifyer.c -o verifyer.out
 ./verifyer.out
+
 
 echo "Hi, good luck saving PERSONS!"
