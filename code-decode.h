@@ -15,11 +15,10 @@ char convert_to_alphabet(int my_number, boolean upper_case){
 }
 
 int decrypt_the_alphabet(int rank_of_an_aphabet, int number_on_letter){
-    return ((rank_of_an_aphabet - 1 + number_on_letter)%26)%26 + 1;
+    return (rank_of_an_aphabet - 1 + number_on_letter)%26 + 1;
 }
 int encrypt_the_alphabet(int rank_of_an_aphabet, int number_on_letter){
-    int alphabet_index;
-    for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
+    for(int alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
         if(decrypt_the_alphabet(alphabet_index, number_on_letter) == rank_of_an_aphabet){
             return alphabet_index;
         }
@@ -96,18 +95,13 @@ void display_text(char text[], int length_of_text){
     printf("\n");
 }
 
-void display_CODE_of_the_letter(int number_on_letter){
-    int alphabet_index;
-    printf("-------------LETTER %d-------------", number_on_letter);
-    printf("\n");
-    for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
-        printf("%c in encrypted_letter is %c in RAW-LETTER.", convert_to_alphabet(alphabet_index, true), convert_to_alphabet(decrypt_the_alphabet(alphabet_index, number_on_letter), true));
-        printf("\n");
+boolean is_matching_validly(char filename1[], char filename2[], int length_of_text){
+    for(int my_index = 0; my_index < length_of_text-1; my_index++){
+        if(filename1[my_index] != filename2[my_index]){
+            return false;
+        }
     }
-    printf("\n");
-    for(alphabet_index = 1 ; alphabet_index <= 26 ; alphabet_index++){
-        printf("%c in RAW-LETTER is to be %c on encrypted_letter.", convert_to_alphabet(alphabet_index, true), convert_to_alphabet(encrypt_the_alphabet(alphabet_index, number_on_letter), true));
-        printf("\n");
-    }
-    printf("\n");
+    return true;
 }
+
+
