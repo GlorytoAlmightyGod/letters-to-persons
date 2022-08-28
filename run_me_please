@@ -1,16 +1,22 @@
 ./clean_up
 
+echo -n "Please Enter NUMBER_ON_LETTER : "
+read letter_identifier
+echo "Using $letter_identifier as the Encryption_Number!"
+
+
 gcc encryptor.c -o encryptor.out
-./encryptor.out 1 > encryptor.log
+./encryptor.out $letter_identifier RAW-LETTER encrypted_letter> encryptor.log
 
 gcc decryptor.c -o decryptor.out
-./decryptor.out 1 > decryptor.log
+./decryptor.out $letter_identifier encrypted_letter decrypted_letter > decryptor.log
 
 gcc key_display.c -o key_display.out
-./key_display.out 1 > key.log
+./key_display.out $letter_identifier > key.log
 
 gcc verifyer.c -o verifyer.out
 ./verifyer.out
 
 
 echo "Hi, good luck saving PERSONS!"
+echo "Good-Bye."

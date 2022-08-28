@@ -1,13 +1,15 @@
 #include "code-decode.h"
 
 int main(int argc, char* argv[]){
+
     int encryption_number_on_letter;
     sscanf(argv[1], "%d", &encryption_number_on_letter);
 
     char* name_of_encrypted_letter;
-    name_of_encrypted_letter = "encrypted_letter";
+    name_of_encrypted_letter = argv[2];
+    
     char* name_of_decrypted_letter;
-    name_of_decrypted_letter = "decrypted_letter";
+    name_of_decrypted_letter = argv[3];
 
     int length_of_letter = determine_length_of_letter(name_of_encrypted_letter);
     
