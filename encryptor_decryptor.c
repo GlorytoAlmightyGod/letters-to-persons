@@ -2,11 +2,6 @@
 typedef enum { false, true } boolean;
 
 #define MAXIMUM_SIZE 10000
-size_t letter_size = 0;
-
-char raw_letter_text[MAXIMUM_SIZE];
-char encrypted_letter_text[MAXIMUM_SIZE];
-char decrypted_encrypted_letter_text[MAXIMUM_SIZE];
 
 char convert_to_alphabet(int my_number, boolean upper_case){
     char my_alphabet; 
@@ -50,74 +45,83 @@ void display_decryption_encryption_of_the_letter(int number_on_letter){
     printf("\n");
 }
 
-
-void read_raw_letter(int number_on_letter){
-    FILE *file = fopen("raw_letter", "r");
-    int my_alphabet;
-    letter_size = 0;
+int determine_length_of_raw_letter(char filename[]){
+    FILE *file = fopen(filename, "r");
+    int my_alphabet, my_index = -1;
     while ((my_alphabet = fgetc(file)) != EOF){
-        raw_letter_text[letter_size++] = (char) my_alphabet;
+        my_index++;
     }
-    raw_letter_text[letter_size] = '\0';
+    fclose(file);
+    return my_index;
 }
 
-void encrypt_the_letter(int number_on_letter){
+char* read_letter(char filename[], char text[]){
+    FILE *file = fopen(filename, "r");
+    int my_alphabet, my_index = 0;
+    while ((my_alphabet = fgetc(file)) != EOF){
+        text[my_index++] = (char) my_alphabet;
+    }
+    fclose(file);
+    return text;
+}
+
+char* encrypt_the_letter(char input_text[], char output_text[], int length_of_input_text, int encryption_number){
     int my_index;
-    for(my_index = 0; my_index < letter_size; my_index++){
-        char my_character = raw_letter_text[my_index];
+    for(my_index = 0; my_index < length_of_input_text; my_index++){
+        char my_character = input_text[my_index];
         int my_number = my_character;
         if(my_number >= 65 && my_number <= 90){
-            encrypted_letter_text[my_index] = convert_to_alphabet(encrypt_the_alphabet(my_number - 64, number_on_letter), true);
+            output_text[my_index] = convert_to_alphabet(encrypt_the_alphabet(my_number - 64, encryption_number), true);
         }
         else if(my_number >= 97 && my_number <= 122){
-            encrypted_letter_text[my_index] = convert_to_alphabet(encrypt_the_alphabet(my_number - 96, number_on_letter), false);
+            output_text[my_index] = convert_to_alphabet(encrypt_the_alphabet(my_number - 96, encryption_number), false);
         }
         else{
-            encrypted_letter_text[my_index] = raw_letter_text[my_index];
+            output_text[my_index] = my_character;
         }
     }
-    encrypted_letter_text[my_index] = '\0';
+    return output_text;
 }
 
-void write_encrypted_letter(int number_on_letter){
-    FILE *file = fopen("encrypted_letter", "w+");
-    int return_val = fputs(encrypted_letter_text, file);
+void write_letter(char filename[], char text[], int length_of_text){
+    FILE *file = fopen(filename, "w+");
+    fwrite(text, length_of_text, 1, file);
 }
 
-
-void read_encrypted_letter(int number_on_letter){
-    FILE *file = fopen("encrypted_letter", "r");
-    int my_alphabet;
-    letter_size = 0;
-    while ((my_alphabet = fgetc(file)) != EOF){
-        encrypted_letter_text[letter_size++] = (char) my_alphabet;
+void display_text(char text[], int length_of_text){
+    for(int my_index = 0; my_index < length_of_text;my_index++){
+        printf("%c", text[my_index]);
     }
-    encrypted_letter_text[letter_size] = '\0';
+    printf("\n");
+    printf("\n");
 }
-
-void decrypt_the_encrypted_letter(int number_on_letter){
-
-}
-void write_decrypted_encrypted_letter(int number_on_letter){
-    FILE *file = fopen("decrypted_encrypted_letter", "w+");
-    int return_val = fputs(decrypted_encrypted_letter_text, file);
-}
-
-void verify_decrypted_letter_with_raw_letter(int number_on_letter){
-
-}
-
-
 
 int main(void){
-    int number_on_letter = 1123;
-    display_decryption_encryption_of_the_letter(number_on_letter);
+    int number_on_letter = 23;
+//    display_decryption_encryption_of_the_letter(number_on_letter);
 
-    read_raw_letter(number_on_letter);
-    encrypt_the_letter(number_on_letter);
-    write_encrypted_letter(number_on_letter);
-    read_encrypted_letter(number_on_letter);
-    decrypt_the_encrypted_letter(number_on_letter);
+    char* name_of_raw_letter;
+    name_of_raw_letter = "raw_letter";
+    char* name_of_encrypted_letter;
+    name_of_encrypted_letter = "encrypted_letter";
+
+    int length_of_letter = determine_length_of_raw_letter(name_of_raw_letter);
+    
+    
+    char raw_letter_text[length_of_letter];
+    char* pointer_raw_letter_text;
+
+    char encrypted_text[length_of_letter];
+    char* pointer_encrypted_text;
+
+    pointer_raw_letter_text = read_letter(name_of_raw_letter, raw_letter_text);
+    pointer_encrypted_text = encrypt_the_letter(raw_letter_text, encrypted_text, length_of_letter, number_on_letter);
+    write_letter(name_of_encrypted_letter, encrypted_text, length_of_letter);
+
+//    display_text(pointer_raw_letter_text, length_of_letter);
+//    display_text(pointer_encrypted_text, length_of_letter);
+
+
 
     return 0;
 }

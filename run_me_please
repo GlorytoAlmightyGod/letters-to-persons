@@ -1,3 +1,4 @@
+rm -rf encrypted_letter
 rm -rf encryptor_decryptor.log
 gcc encryptor_decryptor.c
 ./a.out > encryptor_decryptor.log
